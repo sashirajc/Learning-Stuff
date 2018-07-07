@@ -1,6 +1,6 @@
 An algorithm is a set of instructions to accomplish a certain task
 
-##Search Algorithm
+##Search Algorithm##
 
 Search algorithms are used to check if a certain value is present in the data structure.
 
