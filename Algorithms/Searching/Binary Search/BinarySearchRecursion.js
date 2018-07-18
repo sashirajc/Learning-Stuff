@@ -1,5 +1,17 @@
-function BinarySearchRecursion(arr,val){
-    
+function BinarySearchRecursion(arr,val,start=0,end=arr.length){
+    let mid=Math.round((start+end)/2);
+    if(start>end){
+        return -1;
+    }
+    if(arr[mid]<val){
+        return BinarySearchRecursion(arr,val,mid+1,end);
+    }else if(arr[mid]>val){
+        return BinarySearchRecursion(arr,val,start,mid-1);
+    }else if(arr[mid] == val){
+        return mid;
+    } else {
+        return -1;
+    }
 }
 
 
